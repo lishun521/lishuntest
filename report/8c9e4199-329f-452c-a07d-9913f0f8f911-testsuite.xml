@@ -1,0 +1,55 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1545640410645" stop="1545640410676">
+  <name>test_login</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1545640410645" status="passed" stop="1545640410645">
+      <name>Testlogin.test_a</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="1496-MainThread"/>
+        <label name="host" value="DESKTOP-U2H8UNI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1545640410645" status="failed" stop="1545640410676">
+      <name>Testlogin.test_b</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_login.Testlogin object at 0x0000028FFA1F2278&gt;
+
+    @allure.step("测试步骤001")
+    def test_b(self):
+        print("\n222")
+        allure.attach("描述1","请输入用户名")
+        print("\n33")
+        allure.attach("描述2", "请输入用户密码")
+&gt;       assert 0
+E       assert 0
+
+test\test_login.py:16: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="1496-MainThread"/>
+        <label name="host" value="DESKTOP-U2H8UNI"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1545640410645" status="failed" stop="1545640410645">
+          <name>测试步骤001</name>
+          <title>测试步骤001</title>
+          <attachments>
+            <attachment source="ec11c5f7-97f1-4bae-a98f-9d44205df814-attachment.txt" title="描述1" type="text/plain"/>
+            <attachment source="def16e2e-1cb1-4786-b57a-3034f9d81afc-attachment.txt" title="描述2" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
